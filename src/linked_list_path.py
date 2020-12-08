@@ -1,24 +1,33 @@
+# Let's represent a Node 
 class LinkedListNode:
-    # constuctor
-    def _init_(self, value):
+    # constructor 
+    def __init__(self, value):
         self.value = value
-        #t the "arrow"
+        # the "arrow"
         self.next = None
-
-# initialize a few linkedlistNodes
+​
+# initialize a few LinkedListNodes
 x = LinkedListNode('X')
 y = LinkedListNode('Y')
 z = LinkedListNode('Z')
-
-# connect the LinkedListNodes together
+​
+# connect the LinkedListNodes together 
 x.next = y
 y.next = z
-
-# define a function that prints every node in the linked list starting with the input nore
+​
+# define a function that prints every node 
+# in the linked list starting with the input node 
 def print_ll(node):
-
-    current = node
+    # init a new reference that will keep track 
+    # of where we are in the traversal 
+    current = node 
+    # traverse the linked list until 
+    # we get to the end 
     while current is not None:
-        print(curent.value)
+        # print the value of each node along the way 
+        print(current.value)
+        # update current to refer to the next node
+        # in the linked list 
         current = current.next
+​
 print_ll(y)
