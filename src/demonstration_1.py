@@ -28,7 +28,7 @@ class LinkedListNode():
         self.value = value
         self.next  = None
 
-def delete_node(delete_this_node):
+def delete_node(node_to_delete):
     # Your code here
 
 
